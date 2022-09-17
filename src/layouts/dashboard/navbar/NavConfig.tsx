@@ -32,7 +32,7 @@ const navConfig = [
     subheader: 'general',
     items: [
       {
-        title: 'app',
+        title: 'Главная',
         path: PATH_DASHBOARD.general.app,
         icon: ICONS.dashboard,
       },
