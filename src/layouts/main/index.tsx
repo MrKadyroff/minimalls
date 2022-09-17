@@ -32,7 +32,7 @@ export default function MainLayout() {
             bgcolor: 'background.default',
           }}
         >
-          <Container>
+          {/* <Container>
             <Logo sx={{ mb: 1, mx: 'auto' }} />
 
             <Typography variant="caption" component="p">
@@ -40,7 +40,7 @@ export default function MainLayout() {
               <br /> made by &nbsp;
               <Link href="https://minimals.cc/">minimals.cc</Link>
             </Typography>
-          </Container>
+          </Container> */}
         </Box>
       )}
     </Stack>

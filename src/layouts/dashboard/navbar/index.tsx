@@ -87,7 +87,7 @@ export default function DashboardNavbar({ isOpenSidebar, onCloseSidebar }: Props
 
       <Box sx={{ flexGrow: 1 }} />
 
-      {!isCollapse && <NavbarDocs />}
+      {/* {!isCollapse && <NavbarDocs />} */}
     </Scrollbar>
   );
 

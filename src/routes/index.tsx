@@ -28,12 +28,30 @@ export default function Router() {
   return useRoutes([
     {
       path: '/',
-      element: (
-        <GuestGuard>
-          <Login />
-        </GuestGuard>
-      ),
+      element: <MainLayout />,
       children: [
+        {
+          element: (
+            <GuestGuard>
+              <Login />
+            </GuestGuard>
+          ),
+          index: true,
+        },
+      ],
+    },
+    {
+      path: '/auth',
+      element: <MainLayout />,
+      children: [
+        {
+          element: (
+            <GuestGuard>
+              <Login />
+            </GuestGuard>
+          ),
+          index: true,
+        },
         {
           path: 'login',
           element: (
@@ -42,6 +60,10 @@ export default function Router() {
             </GuestGuard>
           ),
         },
+        { path: 'login-unprotected', element: <Login /> },
+        { path: 'register-unprotected', element: <Register /> },
+        { path: 'reset-password', element: <ResetPassword /> },
+        { path: 'verify', element: <VerifyCode /> },
         {
           path: 'register',
           element: (
@@ -50,10 +72,6 @@ export default function Router() {
             </GuestGuard>
           ),
         },
-        { path: 'login-unprotected', element: <Login /> },
-        { path: 'register-unprotected', element: <Register /> },
-        { path: 'reset-password', element: <ResetPassword /> },
-        { path: 'verify', element: <VerifyCode /> },
       ],
     },
 

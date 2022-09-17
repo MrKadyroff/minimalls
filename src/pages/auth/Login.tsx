@@ -53,6 +53,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
   margin: 'auto',
   display: 'flex',
   minHeight: '100vh',
+
   flexDirection: 'column',
   justifyContent: 'center',
   padding: theme.spacing(12, 0),

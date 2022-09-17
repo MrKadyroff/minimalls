@@ -74,25 +74,14 @@ export default function MainHeader() {
             justifyContent: 'space-between',
           }}
         >
-          <Logo />
+          {/* <Logo /> */}
 
-          <Label color="info" sx={{ ml: 1 }}>
-            Ts v2.7.0
-          </Label>
           <Box sx={{ flexGrow: 1 }} />
 
-          {isDesktop && <MenuDesktop isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
+          {/* {isDesktop && <MenuDesktop isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
 
-          <Button
-            variant="contained"
-            target="_blank"
-            rel="noopener"
-            href="https://material-ui.com/store/items/minimal-dashboard/"
-          >
-            Purchase Now
-          </Button>
-
-          {!isDesktop && <MenuMobile isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
+         
+          {!isDesktop && <MenuMobile isOffset={isOffset} isHome={isHome} navConfig={navConfig} />} */}
         </Container>
       </ToolbarStyle>
 

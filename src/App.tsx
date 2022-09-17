@@ -28,7 +28,7 @@ export default function App() {
                 <GlobalStyles />
                 <ProgressBarStyle />
                 <ChartStyle />
-                <Settings />
+                {/* <Settings /> */}
                 <ScrollToTop />
                 <GoogleAnalytics />
                 <Router />
